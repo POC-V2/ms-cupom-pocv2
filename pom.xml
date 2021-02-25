@@ -21,6 +21,11 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>io.opentracing.contrib</groupId>
+			<artifactId>opentracing-spring-jaeger-web-starter</artifactId>
+			<version>3.3.1</version>
+		</dependency>
+		<dependency>
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-ui</artifactId>
 			<version>1.4.8</version>
