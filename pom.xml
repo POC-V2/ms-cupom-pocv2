@@ -11,7 +11,7 @@
 
 	<groupId>com.pocms</groupId>
 	<artifactId>cupons</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0</version>
 	<name>cupons</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
@@ -91,10 +91,6 @@
 						<image>poc-ms/cupons:${version}</image>
 					</to>
 					<container>
-						<jvmFlags>
-							<jvmFlag>-Xms128m</jvmFlag>
-							<jvmFlag>-Xmx256m</jvmFlag>
-						</jvmFlags>
 						<mainClass>com.pocms.cupons.CuponsApplication</mainClass>
 					</container>
 				</configuration>
