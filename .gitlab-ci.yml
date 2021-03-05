@@ -7,7 +7,7 @@ variables:
   BRANCH: $CI_COMMIT_REF_NAME
   MAVEN_OPTS: "-Dmaven.repo.local=.m2/repository"
 
-  cache:
+cache:
   paths:
     - .m2/repository/
     - target/
