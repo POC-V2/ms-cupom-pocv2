@@ -18,9 +18,7 @@
 		<java.version>15</java.version>
 	</properties>
 
-
 	<dependencies>
-		
 		<dependency>
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-ui</artifactId>
@@ -50,6 +48,12 @@
 			<artifactId>jedis</artifactId>
 			<version>3.3.0</version>
 		</dependency>
+
+		<dependency>
+  <groupId>io.micrometer</groupId>
+  <artifactId>micrometer-registry-prometheus</artifactId>
+  <scope>runtime</scope>
+</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
