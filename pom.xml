@@ -157,7 +157,15 @@
                         <image>openjdk:15-jdk-slim-buster</image>
                     </from>
                     <to>
-                        <image>592268041915.dkr.ecr.us-east-1.amazonaws.com/ms-cupom:${version}</image>
+                        <image>gasparbarancelli/ms-cupom-pocv2:${version}</image>
+                        <auth>
+                            <username>
+                                ${env.DOCKERHUB_USERNAME}
+                            </username>
+                            <password>
+                                ${env.DOCKERHUB_TOKEN}
+                            </password>
+                        </auth>
                     </to>
                     <container>
                         <mainClass>com.pocms.cupons.CuponsApplication</mainClass>
