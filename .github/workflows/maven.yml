@@ -60,7 +60,7 @@ jobs:
           key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2    
       - name: Integrate with sonarcloud
-        run: mvn -B org.jacoco:jacoco-maven-plugin:prepare-agent verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml -Dsonar.projectKey=POC-V2_ms-cupom-new -Dsonar.organization=poc-v2 -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=${{secrets.SONARCLOUD_PASSWORD}}
+        run: mvn -B org.jacoco:jacoco-maven-plugin:prepare-agent verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml -Dsonar.projectKey=POC-V2_ms-cupom-pocv2 -Dsonar.organization=poc-v2 -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=${{secrets.SONARCLOUD_PASSWORD}}
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           SONAR_TOKEN: ${{secrets.SONARCLOUD_PASSWORD}}
